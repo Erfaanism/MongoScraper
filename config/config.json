@@ -1,0 +1,4 @@
+{
+	"mongoURL": "mongodb://localhost/scraper",
+	"PORT": "3000"
+}
