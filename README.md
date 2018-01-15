@@ -1,5 +1,7 @@
 # MongoScraper
 
+Deployed on Heroku:
+[TopGear Mongo Scraper](https://tgscraper.herokuapp.com)
 ## Overview
 
 This web application scrapes unformation from the `News` section of [TopGear's Official Website](https://topgear.com) and stores the related information of each article into database.
