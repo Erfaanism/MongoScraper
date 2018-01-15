@@ -1,13 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const scraperMT = require('../controllers/scraper');
+const postModel = require('../models/posts');
 
 router.get('/', (req, res) => {
-	res.render('index');
+	postModel.find({}).sort('-date').exec((error, posts) => {
+		res.render('index', { posts });
+	});
 });
 
 router.get('/refresh', (req, res) => {
-	console.log(req.ip);
 	scraperMT();
 	res.end();
 	// res.redirect('/');
