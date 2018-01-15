@@ -1,0 +1,74 @@
+<div id="disclaimerModal" class="modal">
+	<div class="modal-content">
+		<h4>Disclaimer</h4>
+		<p>This is an educational project and all of the information, content and media included in this project are obtained from TopGear's website, solely for educational purposes. Before using this service, please acknowledge that you read this disclaimer by clicking on I Acknowledge, otherwise you can leave this page and get redirected to TopGear's Official Website. Thank you for your understanding!</p>
+		<p>Thank you for your understanding!</p>
+		<a href="https://topgear.com/car-news" target="_blank">TopGear's Official Website</a>
+		<p>
+			<input type="checkbox" class="filled-in" id="rememberCheck" autocomplete="off" />
+			<label for="rememberCheck">Don't ask me until next week (uses Cookies)</label>
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a class="btn waves-effect waves-green green right" id="acknowledgeBtn">I Acknowledge</a>
+		<a href="https://topgear.com/car-news" class="btn waves-effect waves-green red left" id="leaveBtn">Leave</a>
+	</div>
+</div>
+<div id="commentModal" class="modal">
+	<div class="modal-content">
+		<div class="row">
+			<div class="col s6">
+				<h4>Comment</h4>
+			</div>
+			<div class="col s6 center-align">
+				<i class="material-icons prefix">rate_review</i>
+				<span>Post ID: </span>
+				<span id="post-id"></span>
+			</div>
+			<div class="col s12 divider"></div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">account_circle</i>
+						<input placeholder="YourName" id="nameInput" type="text" class="validate formInput" required>
+						<label for="nameInput">Enter your name</label>
+					</div>
+					<div class="col s6 center-align">
+						<i class="material-icons prefix">fingerprint</i>
+						<span>IP: </span>
+						<span id="user-ip">{{ip}}</span>
+					</div>
+					<div class="input-field col s12">
+						<i class="material-icons prefix">comment</i>
+						<textarea id="commentInput" class="materialize-textarea validate formInput" data-length="240" required></textarea>
+						<label for="commentInput">Comment</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn waves-effect waves-light modal-close">
+			Close
+			<i class="material-icons right">cancel</i>
+		</button>
+		<button class="btn waves-effect waves-light" id="submitComment">
+			Submit
+			<i class="material-icons right">send</i>
+		</button>
+	</div>
+</div>
+<div id="viewModal" class="modal bottom-sheet">
+	<div class="modal-content">
+		<h4>Comments Posted</h4>
+		<ul class="collection" id="commentsContainer">
+		</ul>
+	</div>
+	<div class="modal-footer">
+		<a class="modal-action modal-close btn waves-effect waves-light red">
+			<i class="material-icons">close</i>
+		</a>
+	</div>
+</div>

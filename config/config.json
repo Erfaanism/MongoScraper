@@ -2,7 +2,7 @@
 	"mongoURL": "mongodb://localhost/scraper",
 	"PORT": "3000",
 	"request": {
-		"url": "http://www.motortrend.com/",
+		"url": "https://www.topgear.com/car-news",
 		"headers": {
 			"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
 		}

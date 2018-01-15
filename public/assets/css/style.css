@@ -2,10 +2,61 @@ nav {
 	background-image: url('../img/mesh.jpg');
 }
 
+.navbar-fixed {
+	z-index: 1000;
+}
+
+.customHover:hover {
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	color: white;
+	background-color: #00897b;
+}
+
+.card-title:hover {
+	text-decoration: underline;
+}
+
+.card,
+.collection-item,
+#disclaimerModal {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 .mainLogo {
 	height: 64px;
 }
 
 .navbar-fixed {
 	height: 90px;
+}
+
+.card-title {
+	min-height: 64px;
+}
+
+.card-descritpion {
+	min-height: 45px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.fixed-action-btn {
+	float: right;
+	position: relative;
+}
+
+#commentsContainer {
+	line-height: 250%;
 }

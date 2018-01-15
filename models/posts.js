@@ -11,7 +11,7 @@ const postSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	topic: {
+	link: {
 		type: String,
 		required: true
 	},
@@ -19,17 +19,20 @@ const postSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	link: {
+	description: {
 		type: String,
 		required: true
 	},
-	credits: {
-		type: Array,
-		required: true,
-		default: []
+	authorName: {
+		type: String,
+		required: true
 	},
-	postedOn: {
-		type: Date,
+	authorLink: {
+		type: String,
+		required: true
+	},
+	date: {
+		type: String,
 		required: true
 	}
 });
